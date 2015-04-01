@@ -1,0 +1,150 @@
+[
+    {
+        "model": "specialevent",
+        "items": [
+            {
+                "id": 1,
+                "organizations": [1],
+                "location": "Moore Square Park",
+                "dateSubmitted": "2015-03-26T18:45:06.111Z",
+                "website": "http://url.com",
+                "purpose": "run for charity",
+                "beneficiaries": [1],
+                "date": "2015-05-01",
+                "contact": [1],
+                "startTime": "2015-05-01T18:52:46.638Z",
+                "endTime": "2015-05-02T00:52:46.638Z",
+                "setUpTime": "2015-05-01T18:52:46.638Z",
+                "tearDownTime": "2015-05-02T00:52:46.638Z",
+                "route": [1],
+                "eventTypes": [1],
+                "participantTypes": [1],
+                "estimatedAttendance": 500,
+                "areas": [1],
+                "trashRemovalPlan": "Pick shit up",
+                "emergencyActionPlan": "Run away",
+                "holdHarmlessAgree": true,
+                "seNotifReqsAgree": true,
+                "legalAgree": true,
+                "appFeeAgree": true
+            },
+            {
+                "id": 2,
+                "organizations": [1],
+                "location": "Moore Square Park",
+                "dateSubmitted": "2015-03-26T18:45:06.111Z",
+                "website": "http://url.com",
+                "purpose": "run for charity",
+                "beneficiaries": [1],
+                "date": "2015-05-01",
+                "contact": [1],
+                "startTime": "2015-05-01T18:52:46.638Z",
+                "endTime": "2015-05-02T00:52:46.638Z",
+                "setUpTime": "2015-05-01T18:52:46.638Z",
+                "tearDownTime": "2015-05-02T00:52:46.638Z",
+                "route": [1],
+                "eventTypes": [1],
+                "participantTypes": [1],
+                "estimatedAttendance": 500,
+                "areas": [1],
+                "trashRemovalPlan": "Pick shit up",
+                "emergencyActionPlan": "Run away",
+                "holdHarmlessAgree": true,
+                "seNotifReqsAgree": true,
+                "legalAgree": true,
+                "appFeeAgree": true
+            }
+        ]
+    },
+    {
+        "model": "organization",
+        "items": [
+            {
+                "id": 1,
+                "name": "Race for the Cure",
+                "address": 1,
+                "type": "Not for Profit",
+                "contact": 1,
+                "specialEvents": [1,2]
+            }
+        ]
+    },
+    {
+        "model": "address",
+        "items": [
+            {
+                "id": 1,
+                "firstLine": "1 Exchange Plaza",
+                "city": "Raleigh",
+                "state": "NC",
+                "zipCode": "27601",
+                "contact": 1,
+                "organization": 1
+            }
+        ]
+    },
+    {
+        "model": "contact",
+        "items": [
+            {
+                "id": 1,
+                "name": "Jim Valvano",
+                "address": 1,
+                "telephone": "919-996-2531",
+                "cell": "919-996-2531",
+                "organizations": [1]
+            }
+        ]
+    },
+    {
+        "model": "route",
+        "items": [
+            {
+                "id": 1,
+                "description": "left right left right left",
+                "map": "not yet",
+                "url": "http://map.url.com"
+            }
+        ]
+    },
+    {
+        "model": "beneficiary",
+        "items": [
+            {
+                "id": 1,
+                "name": "Toys for Tots",
+                "specialEvents": [1,2]
+            }
+        ]
+    },
+    {
+        "model": "eventtype",
+        "items": [
+            {
+                "id": 1,
+                "text": "Road race",
+                "specialEvents": [1,2]
+            }
+        ]
+    },
+    {
+        "model": "participanttype",
+        "items": [
+            {
+                "id": 1,
+                "text": "runner",
+                "specialEvents": [1,2]
+            }
+        ]
+    },
+    {
+        "model": "area",
+        "items": [
+            {
+                "id": 1,
+                "name": "Moore Square",
+                "specialEvents": [1,2]
+            }
+        ]
+    }
+]
