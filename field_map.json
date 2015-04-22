@@ -1,0 +1,58 @@
+{
+    "special-event": {
+        "Location:": "location",
+        "Date Submitted": "dateSubmitted",
+        "Website": "website",
+        "Purpose of Event:": "purpose",
+        "Event Date:": "date",
+        "Additional or Alternative Date(s):": "altDates",
+        "Event Start Time 1": "startTime",
+        "Event Ends:": "endTime",
+        "Setup Begins": "setUpTime",
+        "Breakdown Ends:": "tearDownTime",
+        "Upload Detailed Route Map:": "route",
+        "Comments or further explanation of event needs:": "comments",
+        "Annual Event?": "annualEvent",
+        "Est.  Attendance:": "estimatedAttendance",
+        "Previous  Attendance:": "previousAttendance",
+        "Upload Detailed Trash Removal Plan:": "trashRemovalPlan",
+        "Uploaded Emergerncy Action Plan": "emergencyActionPlan",
+        "Will there be alcoholic beverages at this event?": "alcohol",
+        "Will the event sell food?": "food",
+        "Will there be tents or inflatable structures in excess of 400 square feet?": "largeTentsOrInflatables",
+        "Will this event impact CAT or TTA bus routes?": "busImpact",
+        "Will there be amplified music?": "amplifiedMusic",
+        "Will the event involve fireworks, pyrotechnics or other open flame?": "openFlames",
+        "Event Type: (Select all that apply)": "eventTypes",
+        "Participant Type: (Select all that apply)": "participantTypes"
+    },
+
+    "address": {
+        "Mail Address 1:": "firstLine",
+        "Mail Address 2:": "secondLine",
+        "City:": "city",
+        "State:": "state",
+        "Zip:": "zipCode"
+    },
+
+    "organization": {
+        "Production Organization:": "name",
+        "Organization Type:": "type"
+    },
+
+    "beneficiary": {
+        "Benefitting Charity/Group:": "name"
+    },
+    
+    "contact": {
+        "Contact Name:": "name",
+        "Telephone:": "telephone",
+        "Cell:": "cell"
+    },
+    
+    "route": {
+        "Please specify the exact location(s) for your start/finish lines or other areas that you will need right-of-way closures outside of the specified route or outside of the duration of the race. Please i": "description",
+        "Upload Detailed Route Map:": "map",
+        "Please provide a URL to an online map of the route (using Google Maps, Map My Run, etc.) so we can share route information with the public via our online events calendar.": "url"
+    }
+}

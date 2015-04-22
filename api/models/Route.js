@@ -7,17 +7,17 @@
 
 module.exports = {
 
-    attributes: {
-        description: {
-            type: 'text',
-            required: true
-        },
-        map: {
-            type: 'string'
-        },
-        url: {
-            type: 'string'
-        },
-    }
+  attributes: {
+    description: {
+      type: 'text',
+      required: true
+    },
+    map: {
+      type: 'string'
+    },
+    url: {
+      type: 'string'
+    },
+  }
 };
 

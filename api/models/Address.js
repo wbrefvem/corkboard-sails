@@ -7,32 +7,39 @@
 
 module.exports = {
 
-    attributes: {
-        firstLine: {
-            type: 'string',
-            required: true
-        },
-        secondLine: {
-            type: 'string',
-        },
-        city: {
-            type: 'string',
-            required: true
-        },
-        state: {
-            type: 'string',
-            required: true
-        },
-        zipCode: {
-            type: 'string',
-            required: true
-        },
-        contact: {
-            model: 'contact'
-        },
-        organization: {
-            model: 'organization'
-        }
+  attributes: {
+
+    firstLine: {
+      type: 'string',
+      required: true
+    },
+    
+    secondLine: {
+      type: 'string',
+    },
+    
+    city: {
+      type: 'string',
+      required: true
+    },
+    
+    state: {
+      type: 'string',
+      required: true
+    },
+    
+    zipCode: {
+      type: 'string',
+      required: true
+    },
+    
+    contact: {
+      model: 'contact'
+    },
+    
+    organization: {
+      model: 'organization'
     }
+  }
 };
 

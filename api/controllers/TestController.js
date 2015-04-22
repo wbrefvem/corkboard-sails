@@ -1,5 +1,5 @@
 module.exports = {
-    runTests: function(req, res) {
-        return res.view('test');
-    }
+  runTests: function(req, res) {
+    return res.view('test');
+  }
 };

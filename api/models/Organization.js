@@ -7,28 +7,27 @@
 
 module.exports = {
 
-    attributes: {
-        name: {
-            type: 'string',
-            required: true
-        },
-        address: {
-            model: 'address',
-            required: true
-        },
-        type: {
-            type: 'string',
-            enum: ['For Profit', 'Not for Profit'],
-            required: true
-        },
-        contact: {
-            model: 'contact',
-            required: true
-        },
-        specialEvents: {
-            collection: 'specialEvent',
-            via: 'organizations'
-        }
+  attributes: {
+    name: {
+      type: 'string',
+      required: true
+    },
+    address: {
+      model: 'address',
+      required: true
+    },
+    type: {
+      type: 'string',
+      enum: ['For Profit', 'Not for Profit'],
+      required: true
+    },
+    contact: {
+      model: 'contact',
+      required: true
+    },
+    specialEvents: {
+      collection: 'specialEvent',
+      via: 'organizations'
     }
+  }
 };
-

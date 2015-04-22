@@ -7,27 +7,37 @@
 
 module.exports = {
 
-    attributes: {
-        name: {
-            type: 'string',
-            required: true
-        },
-        address: {
-            model: 'address',
-            required: true
-        },
-        telephone: {
-            type: 'string',
-            required: true
-        },
-        cell: {
-            type: 'string',
-            required: true
-        },
-        organizations: {
-            collection: 'organization',
-            via: 'contact'
-        }
+  attributes: {
+
+    name: {
+      type: 'string',
+      required: true
+    },
+    
+    address: {
+      model: 'address',
+      required: true
+    },
+    
+    email: {
+      type: 'string',
+      required: true
+    },
+
+    telephone: {
+      type: 'string',
+      required: true
+    },
+    
+    cell: {
+      type: 'string',
+      required: true
+    },
+    
+    organizations: {
+      collection: 'organization',
+      via: 'contact'
     }
+  }
 };
 

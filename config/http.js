@@ -9,6 +9,8 @@
  * http://sailsjs.org/#/documentation/reference/sails.config/sails.config.http.html
  */
 
+var _ = require('underscore.string');
+
 module.exports.http = {
 
   /****************************************************************************
@@ -21,7 +23,7 @@ module.exports.http = {
   *                                                                           *
   ****************************************************************************/
 
-  // middleware: {
+  middleware: {
 
   /***************************************************************************
   *                                                                          *
@@ -41,6 +43,7 @@ module.exports.http = {
       'methodOverride',
       'poweredBy',
       '$custom',
+      'urlCamelizer', 
       'router',
       'www',
       'favicon',
@@ -55,10 +58,15 @@ module.exports.http = {
   ****************************************************************************/
 
     requestLogger: function (req, res, next) {
-        sails.log("Requested :: ", req.method, req.url);
-        return next();
-    }
+      sails.log.info("Requested :: ", req.method, req.url);
+      return next();
+    },
 
+    urlCamelizer: function (req, res, next) {
+      req.url = _.camelize(req.url);
+      sails.log.info(req.url);
+      return next();
+    }
 
   /***************************************************************************
   *                                                                          *
@@ -69,9 +77,9 @@ module.exports.http = {
   *                                                                          *
   ***************************************************************************/
 
-    // bodyParser: require('skipper')
+    /*bodyParser: require('skipper')*/
 
-  // },
+  },
 
   /***************************************************************************
   *                                                                          *
